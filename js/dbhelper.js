@@ -9,11 +9,11 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     // uncomment these lines if hosting on local server
-    //const port = 8000 // Change this to your server port
+    const port = 8000 // Change this to your server port
     //return `http://localhost:${port}/data/restaurants.json`;
 
     // uncomment this line if hosting on GitHub Pages site.
-    return `http://techsnazzy.com/restaurant-reviews-app/data/restaurants.json`;
+    return `https://TechSnazzy.github.io/restaurant-reviews-app/data/restaurants.json`;
   }
 
   /**
