@@ -28,9 +28,26 @@ This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://w
 
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write.
 
+### Instructions:
+
+1. Clone this app to your computer.
+
+```
+git clone https://github.com/TechSnazzy/restaurant-reviews-app.git
+```
+
+2. From a command line, change to this project directory and then run the server using Python.
+
+```
+cd restaurant-reviews-app
+python -m SimpleHTTPServer 8000
+```
+
+3. Launch your web browser and visit this page: [http://localhost:8000](http://localhost:8000)
+
 ### Resources
 
-Here is a list of resources I used to learn how to make this app work:
+I can't give enough thanks or credit to these valuable resources on the web. These resources helped push me in the right direction to get this app running.
 
 * [Project 1 MWS Webinar with Doug Brown](https://www.youtube.com/watch?v=92dtrNU1GQc)
 * [Matthew Cranford: Restaurant Reviews App Walkthrough](https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-1-map-api/)
