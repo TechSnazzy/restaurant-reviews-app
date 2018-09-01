@@ -28,6 +28,15 @@ This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://w
 
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write.
 
+### Special Note
+I have removed all instances of `tabindex` from all non-interactive elements. The rubric states that tabindex is required, however the MDN states that it is not recommended to use it that way.
+
+link: [MDN tabindex page featuring accessibility concerns](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex#Accessibility_concerns)
+
+> Avoid using the tabindex attribute in conjunction with non-interactive content to make something intended to be interactive focusable by keyboard input. An example of this would be using an <div> element to describe a button, instead of the `<button>` element.
+
+> Interactive components authored using non-interactive elements will not be listed in the accessibility tree. This will prevent assistive technology from being able to navigate to and manipulate it. The content should be semantically described using interactive elements (`<a>`, `<button>`, `<details>`, `<input>`, `<select>`, `<textarea>`, etc.) instead. These elements have built-in roles and states that communicate status to the accessibility that would otherwise have to be managed by ARIA.
+
 ### Instructions:
 
 1. Clone this app to your computer.
