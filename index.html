@@ -18,14 +18,17 @@
   </header>
 
   <main id="maincontent">
-    <section id="map-container" aria-labelledby="map-aria-description" role="application">
-      <div id="map"></div>
+
+    <section id="map-container" aria-hidden="true" aria-labelledby="map-aria-description" role="application">
+      <div id="map" aria-hidden="true" aria-labelledby="map-aria-description" role="application"></div>
+      <label for="map-aria-description" class="map-aria-description">Mapbox Map Application User Interface</label>
     </section>
-    <label for="map-aria-description" class="map-aria-description">Mapbox Map App</label>
-    <section>
+
+
+    <section aria-hidden="true" role="main">
       <div class="filter-options">
-        <h3>Filter Results</h3>
-        <div class="filter-selects">
+        <h2>Filter Results</h2>
+        <div aria-hidden="true" class="filter-selects">
           <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-labelledby="neighborhoods-label">
             <option value="all">All Neighborhoods</option>
           </select>
