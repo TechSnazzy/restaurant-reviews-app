@@ -1,5 +1,7 @@
 # Mobile Web Specialist Certification Course
+
 ---
+
 #### _Three Stage Course Material Project - Restaurant Reviews_
 
 ## Project Overview: Stage 1
@@ -29,6 +31,7 @@ This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://w
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write.
 
 ### Special Note
+
 I have removed all instances of `tabindex` from all non-interactive elements. The rubric states that tabindex is required, however the MDN states that it is not recommended to use it that way.
 
 link: [MDN tabindex page featuring accessibility concerns](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex#Accessibility_concerns)
@@ -58,5 +61,5 @@ python -m SimpleHTTPServer 8000
 
 I can't give enough thanks or credit to these valuable resources on the web. These resources helped push me in the right direction to get this app running.
 
-* [Project 1 MWS Webinar with Doug Brown](https://www.youtube.com/watch?v=92dtrNU1GQc)
-* [Matthew Cranford: Restaurant Reviews App Walkthrough](https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-1-map-api/)
+- [Project 1 MWS Webinar with Doug Brown](https://www.youtube.com/watch?v=92dtrNU1GQc)
+- [Matthew Cranford: Restaurant Reviews App Walkthrough](https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-1-map-api/)

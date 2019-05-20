@@ -18,7 +18,7 @@ var urlsToCache = [
   './img/7.jpg',
   './img/8.jpg',
   './img/9.jpg',
-  './img/10.jpg',
+  './img/10.jpg'
 ];
 
 /*
@@ -27,8 +27,7 @@ Install the Service Worker
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(staticCacheName).then(cache => {
-      return cache
-        .addAll(urlsToCache);
+      return cache.addAll(urlsToCache);
     })
   );
 });
@@ -40,12 +39,16 @@ self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
-        cacheNames.filter(cacheName => {
-          return cacheName.startsWith('restaurant-') &&
-            cacheName != staticCacheName;
-        }).map(cacheName => {
-          return caches.delete(cacheName);
-        })
+        cacheNames
+          .filter(cacheName => {
+            return (
+              cacheName.startsWith('restaurant-') &&
+              cacheName != staticCacheName
+            );
+          })
+          .map(cacheName => {
+            return caches.delete(cacheName);
+          })
       );
     })
   );
@@ -56,11 +59,13 @@ Fetch offline content
 */
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request, {
-      ignoreSearch: true
-    }).then(response => {
-      return response || fetch(event.request);
-    })
-    .catch(err => console.log(err, event.request))
+    caches
+      .match(event.request, {
+        ignoreSearch: true
+      })
+      .then(response => {
+        return response || fetch(event.request);
+      })
+      .catch(err => console.log(err, event.request))
   );
 });
